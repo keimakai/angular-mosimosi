@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularMosimosi', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ngMaterial'])
+angular.module('angularMosimosi', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'ngMaterial', 'ngDragDrop'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {

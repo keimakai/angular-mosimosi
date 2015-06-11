@@ -5,7 +5,7 @@
   <div class="right-back" ng-click="addOnClick($event)"></div>
   <div class="logo"><img ng-src="assets/images/ohako-logo.png" width="120"></div>
   <div class="tasks">
-    <div class="task" ng-repeat="task in tasks" style="left:{{task.x}}px; top:{{task.y}}px;">
+    <div class="task" ng-repeat="task in tasks" data-drag="true" jqyoui-draggable="{onStop:aaa($event)}" style="left:{{task.x}}px; top:{{task.y}}px;">
       <input type="text" ng-model="task.message"/>
     </div>
   </div>

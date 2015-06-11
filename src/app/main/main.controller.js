@@ -18,6 +18,10 @@ angular.module('angularMosimosi').controller('MainCtrl', function ($scope, $inte
     $scope.time = new Date();
   };
 
+  var aaa = $scope.aaa = function (event) {
+    console.log(event);
+  };
+
   displayTime = $interval(displayTime, 1000);
 
 
